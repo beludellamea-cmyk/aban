@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ABANICADOS · Catálogo</title>
+  <meta name="description" content="Catálogo de abanicos ABANICADOS. Todos incluyen funda. Pedidos por WhatsApp.">
+  <meta name="theme-color" content="#F5F1E8">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E🪭%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="brand-header" aria-label="ABANICADOS">
+    <div class="brand-wrap">
+      <div class="mini-fan" aria-hidden="true">
+        <i style="--i:0"></i><i style="--i:1"></i><i style="--i:2"></i><i style="--i:3"></i><i style="--i:4"></i><i style="--i:5"></i><i style="--i:6"></i>
+        <b></b>
+      </div>
+      <div>
+        <h1>ABANICADOS</h1>
+        <p>abanicos para cada mood</p>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section id="catalogo" class="catalog" aria-labelledby="catalog-title">
+      <div class="catalog-top">
+        <h2 id="catalog-title">Catálogo</h2>
+
+        <div class="filters" role="group" aria-label="Filtrar catálogo">
+          <button type="button" data-filter="todos" aria-pressed="true">TODOS</button>
+          <button type="button" data-filter="estampados" aria-pressed="false">ESTAMPADOS</button>
+          <button type="button" data-filter="colores" aria-pressed="false">COLORES</button>
+          <button type="button" data-filter="premium" aria-pressed="false">PREMIUM</button>
+        </div>
+
+        <p id="filter-phrase" class="filter-phrase">Elegí el que va con tu mood.</p>
+      </div>
+
+      <div id="grid" class="grid" aria-live="polite"></div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p><strong>ABANICADOS</strong> · @abanicados_ · El Colorado, Formosa</p>
+    <p>Transferencia o efectivo · Entrega a coordinar por WhatsApp</p>
+    <p class="creator">Creado por Belén Dellamea</p>
+  </footer>
+
+  <dialog id="product-modal" class="modal" aria-labelledby="modal-title">
+    <div class="modal-panel">
+      <button type="button" class="modal-close" data-close aria-label="Cerrar detalle">×</button>
+      <div id="modal-content"></div>
+    </div>
+  </dialog>
+
+  <script src="products.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
